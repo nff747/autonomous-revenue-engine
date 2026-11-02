@@ -1,38 +1,35 @@
-name: Autonomous Revenue Engines (24/7)
+name: Pipeline
 
 on:
-  schedule:
-    # Runs every 2 hours around the clock
-    - cron: '0 */2 * * *'
   workflow_dispatch:
-
-permissions:
-  contents: write
+  schedule:
+    - cron: '0 */2 * * *'
 
 jobs:
-  run-engines:
+  run-pipeline:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Install System Dependencies & Playwright
+      - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y dnsutils
           pip install playwright
           playwright install --with-deps chromium
 
-      - name: Execute Master Orchestrator (Engines 2, 3, 4)
+      - name: Run Master Orchestrator
         run: |
           python3 master_orchestrator.py
 
-      - name: Commit and Push Verified Leads & Reports
+      - name: Commit updates
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
