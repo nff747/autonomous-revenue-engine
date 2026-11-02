@@ -2,9 +2,12 @@ name: Autonomous Revenue Engines (24/7)
 
 on:
   schedule:
-    # Runs every 2 hours around the clock (12 times per day)
+    # Runs every 2 hours around the clock
     - cron: '0 */2 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   run-engines:
@@ -27,12 +30,12 @@ jobs:
 
       - name: Execute Master Orchestrator (Engines 2, 3, 4)
         run: |
-          python3 autonomous_engines/master_orchestrator.py
+          python3 master_orchestrator.py
 
       - name: Commit and Push Verified Leads & Reports
         run: |
-          git config --global user.name "nff747-automation-bot"
-          git config --global user.email "bot@lunarparadox.com"
-          git add autonomous_engines/data_feeds/*.csv autonomous_engines/bounty_scanner/*.json autonomous_engines/checkout_watchdog/*.json
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data_feeds/*.csv bounty_scanner/*.json checkout_watchdog/*.json
           git commit -m "Auto-update 24/7 revenue feeds & reports [skip ci]" || echo "No changes to commit"
           git push || echo "Push skipped"
