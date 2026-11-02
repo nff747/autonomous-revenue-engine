@@ -1,0 +1,68 @@
+[
+  {
+    "store": "Allbirds",
+    "url": "https://www.allbirds.com/products/womens-allbirds-flip-flop-dusty-pink",
+    "timestamp": "2026-11-02 17:46:23",
+    "http_status": 200,
+    "pdp_load_time_ms": 2235,
+    "atc_button_detected": true,
+    "atc_clickable": false,
+    "cart_flow_passed": false,
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 429 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "TypeError: Failed to fetch\n    at r.fetch (https://www.untuckit.com/cdn/wpm/s610a19cewf693d529pf324840bm6169d9b4m.js:1:74498)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1334\n    at Generator.next (<anonymous>)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1128\n    at new Promise (<anonymous>)\n    at k (https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:948)\n    at ft (https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1294)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:15750\n    at Generator.next (<anonymous>)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1128"
+    ],
+    "network_errors": [
+      "429: https://adsagentclientafd-b7hqhjdrf3fpeqh2.b01.azurefd.net/f",
+      "404: https://kith.com/cdn/shop/t/669/assets/Georgia.woff2"
+    ],
+    "screenshot": "/home/n1khy/Projects/UGC/autonomous_engines/checkout_watchdog/watchdog_allbirds.png"
+  },
+  {
+    "store": "Kith",
+    "url": "https://kith.com/products/tu153677-b257",
+    "timestamp": "2026-11-02 17:46:28",
+    "http_status": 200,
+    "pdp_load_time_ms": 2699,
+    "atc_button_detected": true,
+    "atc_clickable": false,
+    "cart_flow_passed": false,
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "TypeError: Failed to fetch\n    at r.fetch (https://www.untuckit.com/cdn/wpm/s610a19cewf693d529pf324840bm6169d9b4m.js:1:74498)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1334\n    at Generator.next (<anonymous>)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1128\n    at new Promise (<anonymous>)\n    at k (https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:948)\n    at ft (https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1294)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:15750\n    at Generator.next (<anonymous>)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1128"
+    ],
+    "network_errors": [
+      "404: https://kith.com/cdn/shop/t/669/assets/Georgia.woff2"
+    ],
+    "screenshot": "/home/n1khy/Projects/UGC/autonomous_engines/checkout_watchdog/watchdog_kith.png"
+  },
+  {
+    "store": "Untuckit",
+    "url": "https://www.untuckit.com/products/gifford-wf",
+    "timestamp": "2026-11-02 17:46:33",
+    "http_status": 200,
+    "pdp_load_time_ms": 2097,
+    "atc_button_detected": true,
+    "atc_clickable": true,
+    "cart_flow_passed": false,
+    "console_errors": [
+      "TypeError: Failed to fetch\n    at r.fetch (https://www.untuckit.com/cdn/wpm/s610a19cewf693d529pf324840bm6169d9b4m.js:1:74498)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1334\n    at Generator.next (<anonymous>)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1128\n    at new Promise (<anonymous>)\n    at k (https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:948)\n    at ft (https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1294)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:15750\n    at Generator.next (<anonymous>)\n    at https://www.untuckit.com/web-pixels/strict/app/web-pixel-471236686@bb5c430150f6ec7b1b6d450e96a8deec.js:1:1128"
+    ],
+    "network_errors": [],
+    "screenshot": "/home/n1khy/Projects/UGC/autonomous_engines/checkout_watchdog/watchdog_untuckit.png"
+  },
+  {
+    "store": "Death Wish Coffee",
+    "url": "https://www.deathwishcoffee.com/products/gingerdead-chocolate-bark",
+    "timestamp": "2026-11-02 17:46:42",
+    "http_status": 200,
+    "pdp_load_time_ms": 1441,
+    "atc_button_detected": true,
+    "atc_clickable": false,
+    "cart_flow_passed": false,
+    "console_errors": [],
+    "network_errors": [],
+    "screenshot": "/home/n1khy/Projects/UGC/autonomous_engines/checkout_watchdog/watchdog_death_wish_coffee.png"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "brand": "Ridge",
+    "domain": "ridge.com",
+    "url": "https://ridge.com/products/aluminum-gunmetal",
+    "status": 200,
+    "scrollHeight": 5968,
+    "hasStickyATC": false,
+    "screenshot": "/home/n1khy/Projects/UGC/autonomous_engines/leak_hunter/proof_ridge.png"
+  },
+  {
+    "brand": "Ten Thousand",
+    "domain": "tenthousand.cc",
+    "url": "https://www.tenthousand.cc/products/interval-short",
+    "status": 200,
+    "scrollHeight": 9596,
+    "hasStickyATC": false,
+    "screenshot": "/home/n1khy/Projects/UGC/autonomous_engines/leak_hunter/proof_ten_thousand.png"
+  },
+  {
+    "brand": "Vuori",
+    "domain": "vuoriclothing.com",
+    "url": "https://vuoriclothing.com/products/kore-short-black",
+    "status": 200,
+    "scrollHeight": 5448,
+    "hasStickyATC": false,
+    "screenshot": "/home/n1khy/Projects/UGC/autonomous_engines/leak_hunter/proof_vuori.png"
+  },
+  {
+    "brand": "Allbirds",
+    "domain": "allbirds.com",
+    "url": "https://www.allbirds.com/products/mens-wool-runners",
+    "status": 200,
+    "scrollHeight": 6660,
+    "hasStickyATC": true,
+    "screenshot": "/home/n1khy/Projects/UGC/autonomous_engines/leak_hunter/proof_allbirds.png"
+  }
+]

@@ -1,0 +1,38 @@
+name: Autonomous Revenue Engines (24/7)
+
+on:
+  schedule:
+    # Runs every 2 hours around the clock (12 times per day)
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-engines:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install System Dependencies & Playwright
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dnsutils
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Execute Master Orchestrator (Engines 2, 3, 4)
+        run: |
+          python3 autonomous_engines/master_orchestrator.py
+
+      - name: Commit and Push Verified Leads & Reports
+        run: |
+          git config --global user.name "nff747-automation-bot"
+          git config --global user.email "bot@lunarparadox.com"
+          git add autonomous_engines/data_feeds/*.csv autonomous_engines/bounty_scanner/*.json autonomous_engines/checkout_watchdog/*.json
+          git commit -m "Auto-update 24/7 revenue feeds & reports [skip ci]" || echo "No changes to commit"
+          git push || echo "Push skipped"
